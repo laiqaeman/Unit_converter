@@ -97,11 +97,22 @@ if theme == "Dark":
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
         
+        /* Make the entire background black */
+        body, .stApp {
+            background-color: #000000 !important;
+            color: #ffffff !important;
+        }
+        
+        /* Sidebar styling */
+        .stSidebar, .css-1d391kg, .css-18e3th9 {
+            background-color:rgb(24, 23, 23) !important;
+        }
+        
         /* Main title styling */
         .stApp h1 {
             font-family: 'Orbitron', sans-serif;
             font-weight: 700;
-            font-size: 3.5rem;
+            font-size: 3rem;
             background: linear-gradient(90deg, #00ff95, #00ffcc, #00f2ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -112,7 +123,7 @@ if theme == "Dark":
             letter-spacing: 2px;
         }
         
-        /* All sidebar headings */
+        /* Sidebar headings */
         .stSidebar h2, .stSidebar h3, .stSidebar .stSubheader {
             font-family: 'Orbitron', sans-serif !important;
             font-weight: 700;
@@ -166,6 +177,7 @@ if theme == "Dark":
         """,
         unsafe_allow_html=True
     )
+
 else:  # Light Theme
     st.markdown(
         """
