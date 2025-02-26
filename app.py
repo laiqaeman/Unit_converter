@@ -394,3 +394,6 @@ if category in did_you_know:
 st.sidebar.subheader("Fun Fact")
 if category in fun_facts:
     st.sidebar.success(fun_facts[category])
+# 🔚 Footer
+st.write("---")
+st.write("Built with Streamlit | By Laiqa Eman")
